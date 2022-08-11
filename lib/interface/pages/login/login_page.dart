@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shrine_ecommerce/interface/pages/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -8,6 +9,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,15 +28,17 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             const SizedBox(height: 120.0),
-            const TextField(
-              decoration: InputDecoration(
+            TextField(
+              controller: _usernameController,
+              decoration: const InputDecoration(
                 filled: true,
                 labelText: 'Username',
               ),
             ),
             const SizedBox(height: 12.0),
-            const TextField(
-              decoration: InputDecoration(
+            TextField(
+              controller: _passwordController,
+              decoration: const InputDecoration(
                 filled: true,
                 labelText: 'Password',
               ),
@@ -42,11 +48,15 @@ class _LoginPageState extends State<LoginPage> {
               alignment: MainAxisAlignment.end,
               children: <Widget>[
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _usernameController.clear();
+                    _passwordController.clear();
+                  },
                   child: const Text('CANCEL'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed(AppRoutes.home),
                   child: const Text('LOGIN'),
                 ),
               ],
