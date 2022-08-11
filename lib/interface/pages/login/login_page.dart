@@ -38,6 +38,19 @@ class _LoginPageState extends State<LoginPage> {
               ),
               obscureText: true,
             ),
+            OverflowBar(
+              alignment: MainAxisAlignment.end,
+              children: <Widget>[
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('CANCEL'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('LOGIN'),
+                ),
+              ],
+            ),
           ],
         ),
       ),
