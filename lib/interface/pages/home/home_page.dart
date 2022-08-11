@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
           onPressed: () => print('Menu Button'),
         ),
         title: const Text('SHRINE'),
+        actions: <Widget>[
+          IconButton(
+            onPressed: () => print('Search Button'),
+            icon: const Icon(
+              Icons.search,
+              semanticLabel: 'search',
+            ),
+          ),
+        ],
       ),
       body: const Center(
         child: Text('You are logged in!'),
