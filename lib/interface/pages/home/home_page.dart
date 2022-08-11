@@ -23,6 +23,13 @@ class HomePage extends StatelessWidget {
               semanticLabel: 'search',
             ),
           ),
+          IconButton(
+            onPressed: () => print('Filter Button'),
+            icon: const Icon(
+              Icons.tune,
+              semanticLabel: 'filter',
+            ),
+          ),
         ],
       ),
       body: const Center(
