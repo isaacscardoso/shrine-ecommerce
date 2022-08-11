@@ -32,8 +32,15 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('You are logged in!'),
+      body: Center(
+        child: GridView.count(
+          crossAxisCount: 2,
+          padding: const EdgeInsets.all(16.0),
+          childAspectRatio: 8.0 / 9.0,
+          children: const <Widget>[
+            Card(),
+          ],
+        ),
       ),
     );
   }
