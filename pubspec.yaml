@@ -95,3 +95,12 @@ flutter_icons:
   ios: true
   image_path: "lib/interface/assets/3.0x/diamond.png"
   min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "lib/interface/assets/3.0x/diamond.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "lib/interface/assets/3.0x/diamond.png"
+    icon_size: 48
