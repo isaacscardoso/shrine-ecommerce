@@ -37,8 +37,19 @@ class HomePage extends StatelessWidget {
           crossAxisCount: 2,
           padding: const EdgeInsets.all(16.0),
           childAspectRatio: 8.0 / 9.0,
-          children: const <Widget>[
-            Card(),
+          children: <Widget>[
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  AspectRatio(
+                    aspectRatio: 18.0 / 11.0,
+                    child: Image.asset('lib/interface/assets/diamond.png'),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
