@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shrine_ecommerce/interface/pages/login/login_page.dart';
+import 'package:shrine_ecommerce/interface/pages/routes.dart';
 
 class ShrineApp extends StatelessWidget {
   const ShrineApp({Key? key}) : super(key: key);
@@ -7,10 +9,9 @@ class ShrineApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Shrine',
-      initialRoute: '/login',
+      initialRoute: AppRoutes.login,
       routes: {
-        '/login': (_) => const Text('Login'),
-        '/': (_) => const Text('Home'),
+        AppRoutes.login: (_) => const LoginPage(),
       },
     );
   }
