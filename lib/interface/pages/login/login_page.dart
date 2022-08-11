@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset('assets/diamond.png'),
+                Image.asset('lib/interface/assets/diamond.png'),
                 const SizedBox(height: 16.0),
                 const Text('SHRINE'),
               ],
