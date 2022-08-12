@@ -34,6 +34,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: const GridProductCard(),
+      resizeToAvoidBottomInset: false,
     );
   }
 }
