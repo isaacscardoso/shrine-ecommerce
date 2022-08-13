@@ -14,6 +14,13 @@ ThemeData buildShrineTheme() {
     textSelectionTheme: const TextSelectionThemeData(
       selectionColor: kShrinePink100,
     ),
+    inputDecorationTheme: const InputDecorationTheme(
+      // border:
+      // focusedBorder:
+      floatingLabelStyle: TextStyle(
+        color: kShrineBrown900,
+      ),
+    ),
   );
 }
 
