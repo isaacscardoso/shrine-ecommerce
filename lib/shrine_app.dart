@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shrine_ecommerce/interface/components/app_theme.dart';
 import 'package:shrine_ecommerce/interface/pages/home/home_page.dart';
 import 'package:shrine_ecommerce/interface/pages/login/login_page.dart';
 import 'package:shrine_ecommerce/interface/pages/routes.dart';
@@ -15,6 +16,7 @@ class ShrineApp extends StatelessWidget {
         AppRoutes.home: (_) => const HomePage(),
         AppRoutes.login: (_) => const LoginPage(),
       },
+      theme: buildShrineTheme(),
     );
   }
 }
