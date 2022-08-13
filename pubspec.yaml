@@ -91,6 +91,13 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: lib/interface/assets/fonts/Rubik-Medium.ttf
+        - asset: lib/interface/assets/fonts/Rubik-Regular.ttf
+          weight: 500
+
 flutter_icons:
   android: true
   ios: true
