@@ -38,17 +38,20 @@ class GridProductCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       product.name,
-                      style: themeData.textTheme.headline6,
+                      style: themeData.textTheme.button,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     ),
-                    const SizedBox(height: 8.0),
+                    const SizedBox(height: 4.0),
                     Text(
                       numberFormat.format(product.price),
-                      style: themeData.textTheme.subtitle2,
+                      style: themeData.textTheme.caption,
                     ),
                   ],
                 ),
