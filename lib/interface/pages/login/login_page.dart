@@ -61,6 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: () =>
                       Navigator.of(context).pushNamed(AppRoutes.home),
+                  style: ElevatedButton.styleFrom(elevation: 4.0),
                   child: const Text('LOGIN'),
                 ),
               ],
