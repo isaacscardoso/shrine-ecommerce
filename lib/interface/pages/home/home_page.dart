@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shrine_ecommerce/interface/pages/home/components/grid_product_card.dart';
+import 'package:shrine_ecommerce/interface/pages/home/widgets/grid_product_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
