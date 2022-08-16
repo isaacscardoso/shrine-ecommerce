@@ -15,8 +15,13 @@ ThemeData buildShrineTheme() {
       selectionColor: kShrinePink100,
     ),
     inputDecorationTheme: const InputDecorationTheme(
-      // border:
-      // focusedBorder:
+      border: OutlineInputBorder(),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          width: 2.0,
+          color: kShrineBrown900,
+        ),
+      ),
       floatingLabelStyle: TextStyle(
         color: kShrineBrown900,
       ),
