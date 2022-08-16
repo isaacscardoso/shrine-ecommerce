@@ -24,14 +24,16 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 Image.asset('lib/interface/assets/diamond.png'),
                 const SizedBox(height: 16.0),
-                const Text('SHRINE'),
+                Text(
+                  'SHRINE',
+                  style: Theme.of(context).textTheme.headline5,
+                ),
               ],
             ),
             const SizedBox(height: 120.0),
             TextField(
               controller: _usernameController,
               decoration: const InputDecoration(
-                filled: true,
                 labelText: 'Username',
               ),
             ),
@@ -39,7 +41,6 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _passwordController,
               decoration: const InputDecoration(
-                filled: true,
                 labelText: 'Password',
               ),
               obscureText: true,
@@ -52,6 +53,9 @@ class _LoginPageState extends State<LoginPage> {
                     _usernameController.clear();
                     _passwordController.clear();
                   },
+                  style: TextButton.styleFrom(
+                    primary: Theme.of(context).colorScheme.secondary,
+                  ),
                   child: const Text('CANCEL'),
                 ),
                 ElevatedButton(
