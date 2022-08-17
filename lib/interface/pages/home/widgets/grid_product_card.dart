@@ -28,12 +28,11 @@ class GridProductCard extends StatelessWidget {
           children: <Widget>[
             AspectRatio(
               aspectRatio: 18.0 / 11.0,
-              child: Image.asset('lib/interface/assets/diamond.png'),
-              // child: Image.asset(
-              //   product.assetName,
-              //   package: product.assetPackage,
-              //   fit: BoxFit.fitWidth,
-              // ),
+              child: Image.asset(
+                product.assetName,
+                package: product.assetPackage,
+                fit: BoxFit.fitWidth,
+              ),
             ),
             Expanded(
               child: Padding(
