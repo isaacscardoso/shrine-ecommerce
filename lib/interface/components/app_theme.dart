@@ -12,6 +12,24 @@ ThemeData buildShrineTheme() {
       error: kShrineErrorRed,
     ),
     textTheme: buildShrineTextTheme(base.textTheme),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        shape: const BeveledRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(7.0),
+          ),
+        ),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        shape: const BeveledRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(7.0),
+          ),
+        ),
+      ),
+    ),
     textSelectionTheme: const TextSelectionThemeData(
       selectionColor: kShrinePink100,
     ),
