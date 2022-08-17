@@ -55,13 +55,25 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   style: TextButton.styleFrom(
                     primary: Theme.of(context).colorScheme.secondary,
+                    shape: const BeveledRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(7.0),
+                      ),
+                    ),
                   ),
                   child: const Text('CANCEL'),
                 ),
                 ElevatedButton(
                   onPressed: () =>
                       Navigator.of(context).pushNamed(AppRoutes.home),
-                  style: ElevatedButton.styleFrom(elevation: 4.0),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 4.0,
+                    shape: const BeveledRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(7.0),
+                      ),
+                    ),
+                  ),
                   child: const Text('LOGIN'),
                 ),
               ],
