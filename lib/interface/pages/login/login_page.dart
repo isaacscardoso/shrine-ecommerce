@@ -1,5 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:shrine_ecommerce/interface/pages/routes.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -66,6 +68,32 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text('LOGIN'),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 120,
+            ),
+            Center(
+              child: RichText(
+                text: TextSpan(
+                  children: <InlineSpan>[
+                    const TextSpan(
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                      text: 'Developed by ',
+                    ),
+                    TextSpan(
+                      style: const TextStyle(
+                        color: Colors.blue,
+                      ),
+                      text: 'Isaac Cardoso Silva',
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () async =>
+                            launchUrlString('https://github.com/isaacscardoso'),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
