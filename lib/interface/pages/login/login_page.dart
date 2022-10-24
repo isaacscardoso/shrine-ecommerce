@@ -88,8 +88,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       text: 'Isaac Cardoso Silva',
                       recognizer: TapGestureRecognizer()
-                        ..onTap = () async =>
-                            launchUrlString('https://github.com/isaacscardoso'),
+                        ..onTap = () async => launchUrlString(
+                            'https://github.com/isaacscardoso/'),
                     ),
                   ],
                 ),
